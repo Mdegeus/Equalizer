@@ -1,4 +1,4 @@
-import {defaultExport as songs} from '/js/songs.js'
+import {defaultExport as songs} from './js/songs.js'
 
 const choose_audio_container = document.querySelector(".choose_audio_container");
 
