@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equalizer</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="page-controlls">
+
+        <p class="afk_hidden songtitlecontainer" showPos="top: 5px;" hidePos="top: -10vh;">Song name here</p>
+
+        <div class="button-container-bottom afk_hidden" showPos="bottom: 15px;" hidePos="bottom: -10vh;">
+            <button id="playbutton" type="button" class="ImageButton" style="background-color: rgb(29, 29, 29);">
+                <img src="./img/icons/play.png" alt="">
+            </button>
+
+            <button id="audiobutton" type="button" class="ImageButton" style="background-color: rgb(29, 29, 29);">
+                <img src="./img/icons/audio.png" alt="">
+            </button>
+
+            <button id="settingsbutton" type="button" class="ImageButton" style="background-color: rgb(29, 29, 29);">
+                <img src="./img/icons/setting_wheel.png" alt="">
+            </button>
+
+            <button id="fullscreenbutton" type="button" class="ImageButton" style="background-color: rgb(29, 29, 29);">
+                <img src="./img/icons/full_screen.png" alt="">
+            </button>
+        </div>
+
+    </div>
+
+    <div class="choose_audio_screen" hidden>
+        <div class="choose_audio_container">
+
+        </div>
+    </div>
+
+    <div class="equalizer-container">
+        <div id="equalizer">
+        
+        </div>
+    </div>
+
+</body>
+    <script src="./js/main.js"></script>
+    <script src="./js/mousemovecontrolls.js"></script>
+    <script src="./js/audiofunctionality.js" type="module"></script>
+</html>

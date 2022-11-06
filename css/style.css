@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+*[remove=true] {
+    display: none;
+}
+
+html,
+body {
+    height: 100vh;
+    width: 100vw;
+
+    margin: 0;
+    padding: 0;
+
+    overflow: hidden;
+    background-color: rgb(19, 19, 19);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-controlls {
+    position: absolute;
+
+    min-height: 100vh;
+    min-width: 100vw;
+
+    display: flex;
+    justify-content: center;
+}
+
+.afk_hidden {
+    transition: all 0.25s;
+    position: absolute;
+}
+
+.button-container-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    min-width: 300px;
+    max-width: 315px;
+    width: 40vw;
+    height: fit-content;
+}
+
+.ImageButton {
+
+    --minheight: 45px;
+    --size: 8vh;
+
+    min-height: var(--minheight);
+    min-width: var(--minheight);
+
+    height: var(--size);
+    width: var(--size);
+
+    border: none;
+    border-radius: 100%;
+
+    padding: 6px;
+
+    transition: all 0.15s;
+
+    z-index: 2;
+
+    user-select: none;
+}
+
+.ImageButton:hover {
+    padding: 2px;
+    transform: scale(1.05);
+}
+
+.ImageButton > img {
+
+   height: 100%;
+   width: 100%;
+
+   user-select: none;
+}
+
+.songtitlecontainer {
+    padding: 8px 16px;
+    background-color: rgb(45, 45, 45);
+    color: white;
+    border-radius: 16px;
+}
+
+.equalizer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+    width: 100vw;
+
+    overflow: hidden;
+}
+
+#equalizer {
+    /* transform: rotate(180deg); */
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+
+    height: 70vh;
+    width: 80vw;
+    padding: 1.75px;
+}
+
+.equalizer_component {
+    min-height: 6px;
+    width: 6px; 
+    min-width: 6px;
+    background-color: white;
+    border-radius: 16px;
+    margin: 0 6px;
+    transition: opacity .5s, height 0.08s;
+}
+
+.choose_audio_screen {
+    display: flex;
+
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+
+    transition: all .25s;
+}
+
+.choose_audio_screen[hidden] {
+    height: 50vh;
+    opacity: 0;
+}
+
+.choose_audio_container {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 800px;
+    height: 70vh;
+    width: 60vw;
+    background-color: white;
+
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    z-index: 2;
+}
+
+.song_card {
+    
+    flex-grow: 1;
+
+    max-height: 45px;
+
+    margin: 4px;
+}
+
+.song_card > p {
+    text-align: left;
+
+    margin: 0 0 0 4px;
+}
